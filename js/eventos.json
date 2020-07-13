@@ -1,0 +1,42 @@
+{
+  "card2": {
+    "title": "FSS Cloud Virtual Roundtable",
+    "data": "23 de Junio",
+    "description": "¿Has pensado en tener una nube pública que ha sido diseñada para la industria financiera? Conoce más sobre la primera nube pública para servicios financieros, anunciada por IBM.",
+    "alt": "Varias personas trabajando con sus tablets, laptops y cuadernos de notas en una gran mesa compartida",
+    "image": "./images/eventos/FCC_Cloud.jpg",
+    "url": "https://event.on24.com/wcc/r/2367982/166224ED655D66AB93E0B9E4A99638A1",
+    "cta": "Regístrate",
+    "icon": "ibm-external-link"
+  },
+  "card3": {
+    "title": "Retail & Trade Marketing",
+    "data": "23 de Junio",
+    "description": "La industria del Retail enfrenta grandes desafíos como nunca antes. El punto de venta y su operación, tener una visión clave del negocio y sus KPIs nunca fue tan importante para mentener la operación, niveles de stock y adaptarse a los cambios.",
+    "alt": "Un hombre en uncorredor camina entre mamparas de oficinas y sonríe mirando a la cámara",
+    "image": "./images/eventos/retail.png",
+    "url": "https://event.on24.com/wcc/r/2406998/41423A5A7FDC1DC5EFBA7595EA7714CA",
+    "cta": "Regístrate",
+    "icon": "ibm-external-link"
+  },
+  "card4": {
+    "title": "Ciberseguridad entre pares: Banca & Fintech",
+    "data": "24 de Junio",
+    "description": "Los líderes de seguridad en la banca hoy están frente a nuevos desafíos; las entidades financieras, a un aumento en número, frecuencia y sofisticación de amenazas en ciberseguridad.",
+    "alt": "Un joven subido en cima de su silla con un laptop, estrecha la mano de una colega que sonríe, sentada al lado opuesto de la mesa.",
+    "image": "./images/eventos/fintech.png",
+    "url": "https://event.on24.com/wcc/r/2416629/DC1DDC3E4A5A1C6EC0F4A059D9A3AFFC",
+    "cta": "Regístrate",
+    "icon": "ibm-external-link"
+  },
+  "card5": {
+    "title": "Change Experience Argentina",
+    "data": "25 de Junio",
+    "description": "El evento digital para líderes conducido por Martina Rua que contará con la participación especial de Sebastián Campanario.",
+    "alt": "Change Experience",
+    "image": "./images/eventos/change.jpg",
+    "url": "https://event.on24.com/wcc/r/2372292/031CE350B6C57D9BF622F587B14F566E",
+    "cta": "Regístrate",
+    "icon": "ibm-external-link"
+  }
+}
