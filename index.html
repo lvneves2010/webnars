@@ -60,14 +60,21 @@
       }
     });</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script src="//1.www.s81c.com/common/stats/ida_stats.js"></script> -->
-  <script src="https://1.www.s81c.com/common/stats/ida_stats.js"></script>
   <link href="https://1.www.s81c.com/common/v19a/css/www.css" rel="stylesheet" />
   <script src="https://1.www.s81c.com/common/v19a/js/www.js"></script>
+
+  <!-- scripts for production deploy -->
+  <!-- <script src="//1.www.s81c.com/common/stats/ida_stats.js"></script> -->
   <!-- <link href="//1.www.s81c.com/common/v18/css/www.css" rel="stylesheet" /> -->
-  <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet" />
   <!-- <script src="//1.www.s81c.com/common/v18/js/www.js"></script> -->
+  <!-- scripts for production deploy -->
+
+  <!-- scripts for development in localhost -->
+  <script src="https://1.www.s81c.com/common/stats/ida_stats.js"></script>
+  <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet" />
   <script src="https://1.www.s81c.com/common/v18/js/www.js"></script>
+  <!-- scripts for development in localhost -->
+  
   <script src="./js/script.js"></script>
   <link href="./css/style.css" rel="stylesheet" />
   <script type="text/javascript">
@@ -171,42 +178,7 @@
                           <fieldset class="bx--fieldset">
                               <legend class="bx--label">Which themes do you like?</legend>
                               <br><br>
-                              <!-- input + label -->
-                              <div class="bx--form-item bx--checkbox-wrapper">
-                                <input id="checkbox-cloud" class="bx--checkbox" type="checkbox" value="1"
-                                  name="checkbox" onclick="check();">
-                                <label for="bx--checkbox-new" class="bx--checkbox-label">Cloud</label>
-                              </div>
-                              <div class="bx--form-item bx--checkbox-wrapper">
-                                <input id="checkbox-ia" class="bx--checkbox" type="checkbox" value="2"
-                                  name="checkbox" onclick="check();">
-                                <label for="bx--checkbox-new" class="bx--checkbox-label">Inteligencia Artificial</label>
-                              </div>
-                              <div class="bx--form-item bx--checkbox-wrapper">
-                                <input id="checkbox-seguridad" class="bx--checkbox" type="checkbox" value="3"
-                                  name="checkbox" onclick="check();">
-                                <label for="bx--checkbox-new" class="bx--checkbox-label">Seguridad</label>
-                              </div>
-                              <div class="bx--form-item bx--checkbox-wrapper">
-                                <input id="checkbox-infraestructura" class="bx--checkbox" type="checkbox" value="4"
-                                  name="checkbox" onclick="check();">
-                                <label for="bx--checkbox-new" class="bx--checkbox-label">Infraestructura</label>
-                              </div>
-                              <div class="bx--form-item bx--checkbox-wrapper">
-                                <input id="checkbox-data" class="bx--checkbox" type="checkbox" value="5"
-                                  name="checkbox" onclick="check();">
-                                <label for="bx--checkbox-new" class="bx--checkbox-label">Data</label>
-                              </div>
-                              <div class="bx--form-item bx--checkbox-wrapper">
-                                <input id="checkbox-consultoria" class="bx--checkbox" type="checkbox" value="6"
-                                  name="checkbox" onclick="check();">
-                                <label for="bx--checkbox-new" class="bx--checkbox-label">Consultoria</label>
-                              </div>
-                              <div class="bx--form-item bx--checkbox-wrapper">
-                                <input id="checkbox-servicios" class="bx--checkbox" type="checkbox" value="7"
-                                  name="checkbox" onclick="check();">
-                                <label for="bx--checkbox-new" class="bx--checkbox-label">Servicios</label>
-                              </div>
+                              <div id="checkboxes"></div>
                               <br><br>
                               <a class="bx--link" onclick="resetFilter();">clear all</a>
                             </fieldset>

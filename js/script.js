@@ -1,4 +1,11 @@
 $ = jQuery;
+var cloudqty = 0;
+var iaqty = 0;
+var seguridadqty = 0;
+var infraestructuraqty = 0;
+var dataqty = 0;
+var consultoriaqty = 0;
+var serviciosqty = 0;
 var json = $.getJSON("./js/eventos.json", function (results) {
   $.each(results, function () {
     var div = `<div class="ibm-grid-col-xlg-16-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}">
@@ -39,6 +46,8 @@ var json = $.getJSON("./js/ondemand.json", function (results) {
     $("#card__container-ondemand").append(div);
   });
 });
+
+
 
 function mySearch() {
   var input, filter, i, txtValue, card, container, p0, p1;
@@ -127,6 +136,21 @@ function filterSearch(keys) {
     keys.map((key) => {
       for (i = 0; i < card.length; i++) {
         k = card[i].getAttribute("keyword");
+        if(k == "cloud") {
+          cloudqty += 1
+        } else if (k == "ia") {
+          iaqty += 1
+        } else if (k == "seguridad") {
+          seguridadqty += 1
+        } else if (k == "infraestructura") {
+          infraestructuraqty += 1
+        } else if (k == "data") {
+          dataqty += 1
+        } else if (k == "consultoria") {
+          consultoriaqty += 1
+        } else if (k == "servicios") {
+          serviciosqty += 1
+        }
         console.log("k>>", k)
         if( k == key) {
           card[i].style.display = "";
@@ -152,4 +176,70 @@ function setSameHeight(el) {
 $(window).on("load", function () {
   setSameHeight("event__content");
   setSameHeight("ondemand__content");
+  var cloudqty = 0;
+  var iaqty = 0;
+  var seguridadqty = 0;
+  var infraestructuraqty = 0;
+  var dataqty = 0;
+  var consultoriaqty = 0;
+  var serviciosqty = 0;
+  var i, card, container;
+  container = document.getElementById("cards");
+  card = container.getElementsByClassName("ibm-padding-top-1");
+  for (i = 0; i < card.length; i++) {
+    k = card[i].getAttribute("keyword");
+    if(k == "cloud") {
+      cloudqty += 1
+    } else if (k == "ia") {
+      iaqty += 1
+    } else if (k == "seguridad") {
+      seguridadqty += 1
+    } else if (k == "infraestructura") {
+      infraestructuraqty += 1
+    } else if (k == "data") {
+      dataqty += 1
+    } else if (k == "consultoria") {
+      consultoriaqty += 1
+    } else if (k == "servicios") {
+      serviciosqty += 1
+    }
+  }
+  
+  $("#checkboxes").html(`                              <div class="bx--form-item bx--checkbox-wrapper">
+  <input id="checkbox-cloud" class="bx--checkbox" type="checkbox" value="1"
+    name="checkbox" onclick="check();">
+  <label for="bx--checkbox-new" class="bx--checkbox-label">Cloud (${cloudqty})</label>
+</div>
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="checkbox-ia" class="bx--checkbox" type="checkbox" value="2"
+    name="checkbox" onclick="check();">
+  <label for="bx--checkbox-new" class="bx--checkbox-label">Inteligencia Artificial (${iaqty})</label>
+</div>
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="checkbox-seguridad" class="bx--checkbox" type="checkbox" value="3"
+    name="checkbox" onclick="check();">
+  <label for="bx--checkbox-new" class="bx--checkbox-label">Seguridad (${seguridadqty})</label>
+</div>
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="checkbox-infraestructura" class="bx--checkbox" type="checkbox" value="4"
+    name="checkbox" onclick="check();">
+  <label for="bx--checkbox-new" class="bx--checkbox-label">Infraestructura (${infraestructuraqty})</label>
+</div>
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="checkbox-data" class="bx--checkbox" type="checkbox" value="5"
+    name="checkbox" onclick="check();">
+  <label for="bx--checkbox-new" class="bx--checkbox-label">Data (${dataqty})</label>
+</div>
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="checkbox-consultoria" class="bx--checkbox" type="checkbox" value="6"
+    name="checkbox" onclick="check();">
+  <label for="bx--checkbox-new" class="bx--checkbox-label">Consultoria (${consultoriaqty})</label>
+</div>
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="checkbox-servicios" class="bx--checkbox" type="checkbox" value="7"
+    name="checkbox" onclick="check();">
+  <label for="bx--checkbox-new" class="bx--checkbox-label">Servicios (${serviciosqty})</label>
+</div>`);
+
+
 });
