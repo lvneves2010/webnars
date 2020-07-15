@@ -149,24 +149,6 @@ function setSameHeight(el) {
     }
   }, 100);
 }
-
-// function changeTab(top, bottom, show2, show1) {
-//   document.getElementById(top).classList.add("flex__item-active");
-//   document.getElementById(bottom).classList.add("flex__item-active");
-//   document.getElementById(show2).classList.remove("ibm-hide");
-//   document.getElementById(show1).classList.remove("ibm-hide");
-// }
-// let closed = true;
-// function openTab(show) {
-//   if (closed) {
-//     document.getElementById(show).classList.remove("ibm-hide");
-//     closed = false;
-//   } else {
-//     document.getElementById(show).classList.add("ibm-hide");
-//     closed = true;
-//   }
-// }
-
 $(window).on("load", function () {
   setSameHeight("event__content");
   setSameHeight("ondemand__content");

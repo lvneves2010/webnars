@@ -28,6 +28,10 @@
   border-bottom: solid black 0.1px;
 }
 
+.bx--search-magnifier {
+  border-bottom: solid black 0.1px;
+}
+
 .font-leadspace {
   color: #262626;
 }
@@ -127,4 +131,9 @@
 
 .bx--label {
  font-size: 28px;
+}
+
+.search-line {
+  display: flex;
+  align-items: flex-end;
 }
