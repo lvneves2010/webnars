@@ -2,6 +2,7 @@
   "card2": {
     "title": "FSS Cloud Virtual Roundtable",
     "data": "23 de Junio",
+    "keyword": "ia",
     "description": "¿Has pensado en tener una nube pública que ha sido diseñada para la industria financiera? Conoce más sobre la primera nube pública para servicios financieros, anunciada por IBM.",
     "alt": "Varias personas trabajando con sus tablets, laptops y cuadernos de notas en una gran mesa compartida",
     "image": "./images/eventos/FCC_Cloud.jpg",
@@ -12,6 +13,7 @@
   "card3": {
     "title": "Retail & Trade Marketing",
     "data": "23 de Junio",
+    "keyword": "ia",
     "description": "La industria del Retail enfrenta grandes desafíos como nunca antes. El punto de venta y su operación, tener una visión clave del negocio y sus KPIs nunca fue tan importante para mentener la operación, niveles de stock y adaptarse a los cambios.",
     "alt": "Un hombre en uncorredor camina entre mamparas de oficinas y sonríe mirando a la cámara",
     "image": "./images/eventos/retail.png",
@@ -22,6 +24,7 @@
   "card4": {
     "title": "Ciberseguridad entre pares: Banca & Fintech",
     "data": "24 de Junio",
+    "keyword": "ia",
     "description": "Los líderes de seguridad en la banca hoy están frente a nuevos desafíos; las entidades financieras, a un aumento en número, frecuencia y sofisticación de amenazas en ciberseguridad.",
     "alt": "Un joven subido en cima de su silla con un laptop, estrecha la mano de una colega que sonríe, sentada al lado opuesto de la mesa.",
     "image": "./images/eventos/fintech.png",
@@ -32,6 +35,7 @@
   "card5": {
     "title": "Change Experience Argentina",
     "data": "25 de Junio",
+    "keyword": "ia",
     "description": "El evento digital para líderes conducido por Martina Rua que contará con la participación especial de Sebastián Campanario.",
     "alt": "Change Experience",
     "image": "./images/eventos/change.jpg",

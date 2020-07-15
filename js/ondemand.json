@@ -1,6 +1,7 @@
 {
   "card26": {
     "title": "Potencia tu negocio en la cloud híbrida",
+    "keyword": "cloud",
     "description": "No te pierda el evento donde discutiremos los principales retos a los que se enfrentan las empresas y las soluciones de IBM que potencian la implementación de una estrategia de multicloud híbrida.",
     "alt": "Vista aérea de vários edifícios desde lo alto",
     "image": "./images/eventos/cloud_hibrida.jpg",
@@ -10,6 +11,7 @@
   },
   "card25": {
     "title": "Cómo responder hoy ante los riesgos de ciberseguridad",
+    "keyword": "cloud",
     "description": "Desde tu casa podrás ver cómo poder elaborar una respuesta contundente ante los riesgos de ciberseguridad y una perspectiva más completa sobre cada incidente.",
     "alt": "Un hombre sentado trabaja sentado frente a su laptop, la fondo una bicicleta cuelga de lapared, y al lado unestante con libros",
     "image": "./images/eventos/ciberseguridad.png",
@@ -19,6 +21,7 @@
   },
   "card24": {
     "title": "IBM Cloud & AI Week",
+    "keyword": "cloud",
     "description": "Un nuevo mundo necesita nuevas estrategias. Una semana con con contenidos exclusivos & eventos gratuitos online para hablar de Data, AI Infraestructura, Seguridad y muchos más junto a especialistas y clientes!",
     "alt": "Figuras geométricas intercaladas en tres columnas",
     "image": "./images/eventos/cloud_ai.jpg",
@@ -28,6 +31,7 @@
   },
   "card21": {
     "title": "Conoce el nuevo IBM z15 - Hybrid Cloud Innovation",
+    "keyword": "cloud",
     "description": "Si deseas aumentar la seguridad, la privacidad y la resistencia cibernética de los datos en su innovadora nube híbrida, no puedes perderte este webcast.",
     "alt": "Una mujer está en un despacho con varios monitores conectados y presos a una pared, trabajando sentada a la mesa frente a una computadora.",
     "image": "./images/eventos/Conoce_el_nuevo.jpg",
@@ -36,6 +40,7 @@
   },
   "card22": {
     "title": "Nuevo LinuxONE",
+    "keyword": "cloud",
     "description": "La nube que desea con la privacidad y seguridad que necesita. Acompañanos en el próximo webcast para descubrir qué sucede cuando la nube nativa se encuentra con la computación empresarial.",
     "alt": "Empleado de pie en un centro de datos verifica la información en el laptop que sostiene mientras mueve un servidor con la otra mano.",
     "image": "./images/eventos/LinuxONE.jpg",
@@ -44,6 +49,7 @@
   },
   "card23": {
     "title": "IBM Security Summit Sudamérica 2020",
+    "keyword": "cloud",
     "description": "Participe del evento digital en el que conocerá nuestras herramientas en ciberseguridad que le ayudarán a detectar amenazas a tiempo y mantener la integridad de su infraestructura tecnológica y de datos.",
     "alt": "Una mujer sentada a la mesa de su despacho, con un laptop y un monitor conteniendo códigos, mientras realiza una llamada en el móvil.",
     "image": "./images/eventos/security2.jpg",
@@ -52,6 +58,7 @@
   },
   "card20": {
     "title": "Estrategia de datos para la continuidad del negocio",
+    "keyword": "cloud",
     "description": "Te invitamos a conversar con nuestro especialista en datos, Alfonso Garza Reyes, quien hablará sobre los desafíos del momento y cuáles son las recomendaciones y las mejores formas para garantizar la continuidad de su negocio.",
     "alt": "Un hombre monitorea varias pantallas al mismo tempo desde su escritorio.",
     "image": "./images/eventos/1_Estrategia_de_dados.jpg",
@@ -60,6 +67,7 @@
   },
   "card1": {
     "title": "Es hora de pensar en una estrategia cloud de SAP Business ONE",
+    "keyword": "cloud",
     "description": "Conoce la importancia de comenzar a trabajar una estrategia de nube para correr SAP Business ONE. Qué implica una migración y cuáles son sus costos y beneficios. Mejoremos juntos tus procesos core e incrementa el desempeño de SAP a menor costo. ",
     "alt": "Hombre con gafas de pie mirando su tablet.",
     "image": "./images/eventos/card03.jpg",
@@ -68,6 +76,7 @@
   },
   "card15": {
     "title": "Tecnologías para acelerar la transformación digital",
+    "keyword": "cloud",
     "description": "Conoce las tendencias y transformaciones digitales en la industria de seguros, y el rol de IT en este cambio.",
     "alt": "Una mujer tomando notas enuncorredor formado por dos filas de servidores.",
     "image": "./images/ondemand/2_Tecnologias_p_acelerar.jpg",
@@ -76,6 +85,7 @@
   },
   "card16": {
     "title": "IA & datos: motores de innovación en servicios & petróleo",
+    "keyword": "cloud",
     "description": "Te mostramos, a través de varias demos, la adopción de Cloud & Data & AI, para optimizar producción y costos en el negocio de petróleo y servicios. ",
     "alt": "Vista aérea de varios generadores, próximos a la costa,enuna ciudad portuaria.",
     "image": "./images/ondemand/3_IA_datos_motores_innovacion.jpg",
@@ -84,6 +94,7 @@
   },
   "card17": {
     "title": "La continuidad de su negocio en tiempos de contingencia",
+    "keyword": "cloud",
     "description": "Aprende mejores prácticas de continuidad de negocio para los CIO e identifica posibles anomalías y huecos de seguridad de tu negocio, establece un plan de acción y prepárate para elaborar posibles soluciones.",
     "alt": "Una mujer trabajando desde su casa, junto a una ventana, con su laptop y su celular.",
     "image": "./images/ondemand/4_La_continuidad.jpg",
@@ -92,6 +103,7 @@
   },
   "card18": {
     "title": "Nuevos modelos operativos en nuevas realidades",
+    "keyword": "cloud",
     "description": "Aprende cómo es que nuestros expertos de externalización de procesos de negocios pueden crear flujos de trabajo inteligentes y personalizados para transformar tu organización.",
     "alt": "Un hombre sonriendo observa su celular, mientras trabaja durante la noche bajo una lámpara, con su computador y una taza de café.",
     "image": "./images/ondemand/5_Nuevos_modelos_operativos.jpg",
@@ -100,6 +112,7 @@
   },
   "card19": {
     "title": "Supera los desafíos actuales en la Cloud Híbrida",
+    "keyword": "cloud",
     "description": "Perfecciona tu estrategia empresarial y simplifica la manera en la que tu negocio trabaja. Transforma tus procesos de IT a través de la automatización dándole la oportunidad a tus empleados de formar parte de este proceso.",
     "alt": "Una mujer de pie, monitoreando la pantalla de su computador al lado de varios servidores.",
     "image": "./images/ondemand/6_Supera_los_desafios.jpg",
@@ -108,6 +121,7 @@
   },
   "card2": {
     "title": "Security Onboard - Protección e inteligencia de datos",
+    "keyword": "ia",
     "description": "Abordaremos el cifrado de datos como una tecnología central que puede ayudar a protegerlos y también conoceremos cómo proteger los datos empresariales en dispositivos móviles.",
     "alt": "Hombre concentrado viendo un webinar en la computadora.",
     "image": "./images/eventos/card02.jpg",
@@ -116,6 +130,7 @@
   },
   "card3": {
     "title": "Security Onboard - Ask the Experts",
+    "keyword": "ia",
     "description": "Los especialistas en ciberseguridad de IBM estarán participando en el panel “Ask the Experts” para responder a las inquietudes sobre cómo minimizar el riesgo en el entorno digital y proteger los datos confidenciales.",
     "alt": "Hombre concentrado mirando la pantalla de la computadora.",
     "image": "./images/eventos/card01.jpg",
@@ -125,6 +140,7 @@
   "card4": {
     "title": "Cómo podemos trabajar juntos frente a los desafíos del escenario actual.",
     "subtitle": "Es momento de adaptarnos al nuevo entorno. ",
+    "keyword": "ia",
     "description": "Los CTOs de IBM Sudamérica te cuentan sobre las soluciones que pueden ayudar a fortalecer la operación de tu negocio, reducir costos y ganar flexibilidad.",
     "alt": "Hombre feliz tomando café mientras mira un video en la computadora.",
     "image": "./images/ondemand/card01.jpg",
@@ -133,6 +149,7 @@
   },
   "card5": {
     "title": "IT Leadership Exchange Digital Event 2020.",
+    "keyword": "ia",
     "description": "Conoce cuál es el papel del líder de TI en la creación de una empresa cognitiva y cómo IBM se convierte en tu mejor aliado para lograrlo. ",
     "alt": "Mujer sonriente frente a su computadora mirando a la cámara.",
     "image": "./images/ondemand/card02.jpg",
@@ -141,6 +158,7 @@
   },
   "card6": {
     "title": "Journey to AI Webinar Series: Inicia tu camino hacia la Inteligencia Artificial.",
+    "keyword": "ia",
     "description": "Descubre la Escalera de la IA. La metodología de IBM para ayudarte a abordar la inteligencia artificial con la mejor estrategia para tu negocio.",
     "alt": "Hombre riendo al mirar contenido en su teléfono móvil.",
     "image": "./images/ondemand/card03.jpg",
@@ -149,6 +167,7 @@
   },
   "card7": {
     "title": "Change Experience Colombia.",
+    "keyword": "ia",
     "description": "Comprender las tendencias nos permite prepararnos y aprovechar mejor las oportunidades. En este &quot;talk show&quot; en vivo, conocimos la mirada de especialistas y referentes de diversas industrias sobre los retos tecnológicos y del mercado para este año.",
     "alt": "Imagen con fondo azul oscuro con las palabras Change Experience 3 y un micrófono de podcast.",
     "image": "./images/ondemand/card04.jpg",
@@ -157,6 +176,7 @@
   },
   "card8": {
     "title": "Security Onboard.",
+    "keyword": "ia",
     "description": "Une tus defensas para simplificar y fortalecer la resistencia cibernética. Conoce las ventajas del enfoque inteligente de IBM para la analítica de seguridad, que le ayudará a encontrar y responder a amenazas con mayor rapidez.",
     "alt": "Mujer sonriente sentada en la oscuridad frente su laptop mirando el móvil.",
     "image": "./images/ondemand/card05.jpg",
@@ -165,6 +185,7 @@
   },
   "card9": {
     "title": "Security Onboard.",
+    "keyword": "data",
     "description": "Cloud Pack for Security de IBM permite detectar amenazas que se encuentran en varios entornos e integrar todas las herramientas de seguridad sin mover los datos de su fuente original.",
     "alt": "Hombre concentrado en la oficina mirando la computadora.",
     "image": "./images/ondemand/card06.jpg",
@@ -173,6 +194,7 @@
   },
   "card10": {
     "title": "Crea soluciones impulsadas por la IA y ponlas en producción más rápido.",
+    "keyword": "data",
     "description": "Conoce cómo nuestras soluciones pueden ayudarte a enfrentar los más grandes desafíos de la IA empresarial: La falta de conocimientos en ciencia de datos & la capacidad de procesamiento adecuada a las demandas de nuevas cargas como Big Data e AI.",
     "alt": "Mujer sonriente con gafas frente a su computadora mirando a la cámara.",
     "image": "./images/ondemand/card07.jpg",
@@ -181,6 +203,7 @@
   },
   "card11": {
     "title": "Almacenamiento para IA y big data: Optimiza cada etapa de tu flujo de datos.",
+    "keyword": "data",
     "description": "En este webinar te contaremos cómo podemos ayudar a su empresa en el camino hacia la IA y obtener un valor real a partir del análisis de sus datos para tomar mejores decisiones comerciales.",
     "alt": "Hombre de negocios sosteniendo su tablet y sonriendo a la cámara.",
     "image": "./images/ondemand/card08.jpg",
@@ -189,6 +212,7 @@
   },
   "card12": {
     "title": "¿Tus datos están protegidos ante un eventual ataque?",
+    "keyword": "data",
     "description": "Conoce las últimas soluciones disponibles en el portafolio de Almacenamiento Definido por Software de IBM que te permitirá afrontar los desafíos de protección de datos de tu empresa.",
     "alt": "Mujer mirando la computadora con una taza de café al lado.",
     "image": "./images/ondemand/card09.jpg",
@@ -197,6 +221,7 @@
   },
   "card13": {
     "title": "TechTalks: Agiliza la implementación de ambientes no productivos.",
+    "keyword": "data",
     "description": "En este TechTalk podrás conocer cómo acelerar la adopción a la Nube, migrando ambientes de una manera ágil y sin alterar los actuales entornos, para actualizar ambientes a tu propio ritmo.",
     "alt": "Hombre sonriente mirando su tablet.",
     "image": "./images/ondemand/card10.jpg",
@@ -205,6 +230,7 @@
   },
   "card14": {
     "title": "2020, la década de Modernizar Aplicaciones en la Nube, clave para su vigencia en la industria.",
+    "keyword": "data",
     "description": "Descrubre por qué es inevitable el desarrollar aplicaciones modernas para acelerar la transformación digital de tu negocio, mejorar la productividad de tus desarrolladores, la eficiencia operativa y la estandarización.",
     "alt": "Hombre de negocios  pensativo mirando por la ventana.",
     "image": "./images/ondemand/card11.jpg",
