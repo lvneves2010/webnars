@@ -3,7 +3,10 @@
   #card__container-ondemand .ibm-grid-col-sm-4-4 {
     padding: 0;
   }
-  #card__container-webinar,
+  #card__container-webinar {
+    margin: 0;
+    background-color: #f3f3f3;
+  }
   #card__container-ondemand {
     margin: 0;
   }
@@ -17,6 +20,12 @@
     background-size: cover;
     background-position: center;
   }
+}
+
+#searchInput {
+  border: none;
+  width: -webkit-fill-available;
+  border-bottom: solid black 0.1px;
 }
 
 .font-leadspace {
@@ -46,7 +55,7 @@
 }
 
 .background__body {
-  background-color: #f4f4f4;
+  background-color: #fff;
   padding: 40px;
 }
 
@@ -101,4 +110,21 @@
 
 .flex__container .ibm-type-c {
   margin: 0;
+}
+
+.ibm-background-gray-35 {
+  background-color: #bebebe
+}
+
+.ibm-background-neutral-white-35 {
+  background-color: #f3f3f3
+}
+
+.search-and-filter{
+  height: 100%;
+  padding-top: 20px!important;
+}
+
+.bx--label {
+ font-size: 28px;
 }

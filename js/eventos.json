@@ -6,7 +6,7 @@
     "alt": "Varias personas trabajando con sus tablets, laptops y cuadernos de notas en una gran mesa compartida",
     "image": "./images/eventos/FCC_Cloud.jpg",
     "url": "https://event.on24.com/wcc/r/2367982/166224ED655D66AB93E0B9E4A99638A1",
-    "cta": "Regístrate",
+    "cta": "Registrese",
     "icon": "ibm-external-link"
   },
   "card3": {
@@ -16,7 +16,7 @@
     "alt": "Un hombre en uncorredor camina entre mamparas de oficinas y sonríe mirando a la cámara",
     "image": "./images/eventos/retail.png",
     "url": "https://event.on24.com/wcc/r/2406998/41423A5A7FDC1DC5EFBA7595EA7714CA",
-    "cta": "Regístrate",
+    "cta": "Registrese",
     "icon": "ibm-external-link"
   },
   "card4": {
@@ -26,7 +26,7 @@
     "alt": "Un joven subido en cima de su silla con un laptop, estrecha la mano de una colega que sonríe, sentada al lado opuesto de la mesa.",
     "image": "./images/eventos/fintech.png",
     "url": "https://event.on24.com/wcc/r/2416629/DC1DDC3E4A5A1C6EC0F4A059D9A3AFFC",
-    "cta": "Regístrate",
+    "cta": "Registrese",
     "icon": "ibm-external-link"
   },
   "card5": {
@@ -36,7 +36,7 @@
     "alt": "Change Experience",
     "image": "./images/eventos/change.jpg",
     "url": "https://event.on24.com/wcc/r/2372292/031CE350B6C57D9BF622F587B14F566E",
-    "cta": "Regístrate",
+    "cta": "Registrese",
     "icon": "ibm-external-link"
   }
 }

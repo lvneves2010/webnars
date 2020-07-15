@@ -155,18 +155,18 @@
                   <!-- BAND1 -->
                   <div class="ibm-columns ">
                     <!-- XLG/LG/MD TAB -->
-                    <div class="flex__container ibm-hidden-small">
+                    <!-- <div class="flex__container ibm-hidden-small">
                       <div id="eventos" class="flex__item flex__item-active"
                         onclick="changeTab('eventos', 'ondemand', 'card__container-ondemand','card__container-webinar'),setSameHeight('event__content')">
-                        <span class="ibm-type-c">Próximos eventos
+                        <span class="ibm-type-c">Próximos eventos$$$
                         </span></div>
                       <div id="ondemand" class="flex__item"
                         onclick="changeTab('ondemand', 'eventos','card__container-webinar','card__container-ondemand'),setSameHeight('ondemand__content')">
                         <span class=" ibm-type-c">On-Demand</span></div>
-                    </div>
+                    </div> -->
                     <!-- XLG/LG/MD TAB -->
                     <!-- SM TAB -->
-                    <div class="flex__container-small ibm-show-small">
+                    <!-- <div class="flex__container-small ibm-show-small">
                       <div id="eventos-small" class="flex__item-small flex__item-active"
                         onclick="openTab('ondemand-small'),changeTab('eventos-small', 'ondemand-small', 'card__container-ondemand','card__container-webinar')">
                         <div class="flex__container">
@@ -177,14 +177,65 @@
                       <div id="ondemand-small" class="flex__item-small ibm-hide"
                         onclick="changeTab('ondemand-small', 'eventos-small','card__container-webinar','card__container-ondemand')">
                         <span class=" ibm-type-c ibm-bold">On-Demand</span></div>
-                    </div>
+                    </div> -->
                     <!-- SM TAB -->
                     <!-- CARDGENERATOR -->
-                    <div class=" ibm-grid-container" id="card__container-webinar">
-                      <noscript>Please, enable your javascript to see the content</noscript>
-                    </div>
-                    <div class="ibm-grid-container ibm-hide" id="card__container-ondemand">
-                      <noscript>Please, enable your javascript to see the content</noscript>
+                    <div id="cards">
+                      <div class=" ibm-grid-container" id="card__container-webinar">
+                        <div class="search-and-filter ibm-grid-col-xlg-16-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4 ibm-padding-bottom-1">  
+                        <input
+                          type="text"
+                          id="searchInput"
+                          onkeyup="mySearch()"
+                          placeholder="What are you looking for today?"
+                        />
+                        <br><br><br>
+                        <fieldset class="bx--fieldset">
+                            <legend class="bx--label">Which themes do you like?</legend>
+                            <br><br>
+                            <!-- input + label -->
+                            <div class="bx--form-item bx--checkbox-wrapper">
+                              <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new"
+                                name="checkbox">
+                              <label for="bx--checkbox-new" class="bx--checkbox-label">Cloud</label>
+                            </div>
+                            <div class="bx--form-item bx--checkbox-wrapper">
+                              <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new"
+                                name="checkbox">
+                              <label for="bx--checkbox-new" class="bx--checkbox-label">Inteligencia Artificial</label>
+                            </div>
+                            <div class="bx--form-item bx--checkbox-wrapper">
+                              <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new"
+                                name="checkbox">
+                              <label for="bx--checkbox-new" class="bx--checkbox-label">Seguridad</label>
+                            </div>
+                            <div class="bx--form-item bx--checkbox-wrapper">
+                              <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new"
+                                name="checkbox">
+                              <label for="bx--checkbox-new" class="bx--checkbox-label">Infraestructura</label>
+                            </div>
+                            <div class="bx--form-item bx--checkbox-wrapper">
+                              <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new"
+                                name="checkbox">
+                              <label for="bx--checkbox-new" class="bx--checkbox-label">Data</label>
+                            </div>
+                            <div class="bx--form-item bx--checkbox-wrapper">
+                              <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new"
+                                name="checkbox">
+                              <label for="bx--checkbox-new" class="bx--checkbox-label">Consultoria</label>
+                            </div>
+                            <div class="bx--form-item bx--checkbox-wrapper">
+                              <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new"
+                                name="checkbox">
+                              <label for="bx--checkbox-new" class="bx--checkbox-label">Servicios</label>
+                            </div>
+                          </fieldset>
+                        </div>
+                        <noscript>Please, enable your javascript to see the content</noscript>
+                      </div>
+                      <div class="ibm-grid-container" id="card__container-ondemand">
+                        <noscript>Please, enable your javascript to see the content</noscript>
+                      </div>
                     </div>
                     <!-- CARDGENERATOR -->
                   </div>
