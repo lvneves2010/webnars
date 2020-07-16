@@ -8,7 +8,7 @@ var consultoriaqty = 0;
 var serviciosqty = 0;
 var json = $.getJSON("./js/eventos.json", function (results) {
   $.each(results, function () {
-    var div = `<div class="ibm-grid-col-xlg-16-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}">
+    var div = `<div class="ibm-grid-col-xlg-12-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}">
                       <div class="ibm-background-neutral-white-35"><img src="${this.image}" class="ibm-resize" alt="${this.alt}">
                        <div class="ibm-padding-content">
                        <p class="ibm-type-d">${this.data}</p>
@@ -24,7 +24,7 @@ var json = $.getJSON("./js/eventos.json", function (results) {
 });
 var json = $.getJSON("./js/ondemand.json", function (results) {
   $.each(results, function () {
-    var div = `<div class="ibm-grid-col-xlg-16-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}">
+    var div = `<div class="ibm-grid-col-xlg-12-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}">
                       <div class="ibm-background-gray-35"><img src="${
       this.image
       }" class="ibm-resize" alt="${this.alt}">

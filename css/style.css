@@ -26,6 +26,7 @@
   border: none;
   width: -webkit-fill-available;
   border-bottom: solid black 0.1px;
+  /* font-size: 0.9rem; */
 }
 
 .bx--search-magnifier {
@@ -136,4 +137,25 @@
 .search-line {
   display: flex;
   align-items: flex-end;
+}
+
+.sidebar {
+  width: 360px;
+  height: 100vh;
+  padding: 20px;
+  background: #f5f5f5;
+  position: relative;
+  overflow: auto;
+}
+
+.main-container {
+  display: flex;
+}
+
+.ibm-padding-top-1 {
+  max-width: 33%;
+}
+
+.search-controls {
+  min-width: 25%;
 }
