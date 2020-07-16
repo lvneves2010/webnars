@@ -19,7 +19,7 @@ var json = $.getJSON("./js/eventos.json", function (results) {
                       <p class="ibm-ind-link ibm-padding-top-3 ibm-padding-bottom-1"><a
                           class="bx--link" href="${this.url}" target='_blank'>${this.cta}</a></p></div>
                     </div></div>`;
-    $("#card__container-webinar").append(div);
+    $("#card__container").append(div);
   });
 });
 var json = $.getJSON("./js/ondemand.json", function (results) {
@@ -29,7 +29,8 @@ var json = $.getJSON("./js/ondemand.json", function (results) {
       this.image
       }" class="ibm-resize" alt="${this.alt}">
                       <div class="ibm-padding-content">
-                      <div class="ondemand__content">
+                      <p class="ibm-type-d"></p><br>
+                      <div class="event__content">
                       <h1 class="ibm-type-e">${this.title}</h1>
                       <div class="ibm-type-b ibm-bold" >${
       this.subtitle || ""
@@ -43,7 +44,7 @@ var json = $.getJSON("./js/ondemand.json", function (results) {
                           
                           </div>
                     </div></div>`;
-    $("#card__container-ondemand").append(div);
+    $("#card__container").append(div);
   });
 });
 
