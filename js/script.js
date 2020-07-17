@@ -7,6 +7,7 @@ var dataqty = 0;
 var consultoriaqty = 0;
 var serviciosqty = 0;
 var cardArr = [];
+var filteredCards = [];
 var cardIndex = 0;
 var json = $.getJSON("./js/eventos.json", function (results) {
   $.each(results, function () {
@@ -159,45 +160,67 @@ function check()
 }
 
 function filterSearch(keys) {
-  var i, card, container;
-  container = document.getElementById("cards");
-  // console.log("keys", keys)
-  card = container.getElementsByClassName("ibm-padding-top-1");
-
-
-  if(keys.length == 0) {
-  for (i = 0; i < card.length; i++) {
-        card[i].style.display = "";
-    }
+  current_page = 1;
+  if(keys.length === 0) {
+    DisplayList(cardArr, rows, current_page);
+    setSameHeight("event__content");
+    SetupPagination(cardArr,rows);
   } else {
-    for (i = 0; i < card.length; i++) {
-          card[i].style.display = "none";
-      }
-    keys.map((key) => {
-      for (i = 0; i < card.length; i++) {
-        k = card[i].getAttribute("keyword");
-        if(k == "cloud") {
-          cloudqty += 1
-        } else if (k == "ia") {
-          iaqty += 1
-        } else if (k == "seguridad") {
-          seguridadqty += 1
-        } else if (k == "infraestructura") {
-          infraestructuraqty += 1
-        } else if (k == "data") {
-          dataqty += 1
-        } else if (k == "consultoria") {
-          consultoriaqty += 1
-        } else if (k == "servicios") {
-          serviciosqty += 1
-        }
-        // console.log("k>>", k)
-        if( k == key) {
-          card[i].style.display = "";
-        }
-      }
+    filteredCards = [];
+    keys.map( key => {
+      cardArr.map(card => {
+        if(card.indexOf(`keyword="${key}"`) > -1)  filteredCards.push(card);
+      })      
     })
+
+    // console.log(filteredCards)
+  
+    DisplayList(filteredCards, rows, current_page);
+    setSameHeight("event__content");
+    SetupPagination(filteredCards,rows);
+  
   }
+
+
+  // var i, card, container;
+  // container = document.getElementById("cards");
+  // // console.log("keys", keys)
+  // card = container.getElementsByClassName("ibm-padding-top-1");
+
+
+  // if(keys.length == 0) {
+  // for (i = 0; i < card.length; i++) {
+  //       card[i].style.display = "";
+  //   }
+  // } else {
+  //   for (i = 0; i < card.length; i++) {
+  //         card[i].style.display = "none";
+  //     }
+  //   keys.map((key) => {
+  //     for (i = 0; i < card.length; i++) {
+  //       k = card[i].getAttribute("keyword");
+  //       if(k == "cloud") {
+  //         cloudqty += 1
+  //       } else if (k == "ia") {
+  //         iaqty += 1
+  //       } else if (k == "seguridad") {
+  //         seguridadqty += 1
+  //       } else if (k == "infraestructura") {
+  //         infraestructuraqty += 1
+  //       } else if (k == "data") {
+  //         dataqty += 1
+  //       } else if (k == "consultoria") {
+  //         consultoriaqty += 1
+  //       } else if (k == "servicios") {
+  //         serviciosqty += 1
+  //       }
+  //       // console.log("k>>", k)
+  //       if( k == key) {
+  //         card[i].style.display = "";
+  //       }
+  //     }
+  //   })
+  // }
 }
 
 function setSameHeight(el) {
