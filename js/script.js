@@ -6,9 +6,12 @@ var infraestructuraqty = 0;
 var dataqty = 0;
 var consultoriaqty = 0;
 var serviciosqty = 0;
+var cardArr = [];
+var cardIndex = 0;
 var json = $.getJSON("./js/eventos.json", function (results) {
   $.each(results, function () {
-    var div = `<div class="ibm-grid-col-xlg-12-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}">
+    cardIndex ++;
+    var div = `<div class="ibm-grid-col-xlg-12-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}" id="card${cardIndex}">
                       <div class="ibm-background-neutral-white-35"><img src="${this.image}" class="ibm-resize" alt="${this.alt}">
                        <div class="ibm-padding-content">
                        <p class="ibm-type-d">${this.data}</p>
@@ -19,12 +22,15 @@ var json = $.getJSON("./js/eventos.json", function (results) {
                       <p class="ibm-ind-link ibm-padding-top-3 ibm-padding-bottom-1"><a
                           class="bx--link" href="${this.url}" target='_blank'>${this.cta}</a></p></div>
                     </div></div>`;
-    $("#card__container").append(div);
+    // $("#card__container").append(div);
+    cardArr.push(div);
+
   });
 });
 var json = $.getJSON("./js/ondemand.json", function (results) {
   $.each(results, function () {
-    var div = `<div class="ibm-grid-col-xlg-12-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}">
+    cardIndex ++;
+    var div = `<div class="ibm-grid-col-xlg-12-4 ibm-grid-col-lg-16-8 ibm-grid-col-md-8-4 ibm-grid-col-sm-4-4  ibm-padding-top-1 ibm-padding-bottom-1" keyword="${this.keyword}" id="card${cardIndex}">
                       <div class="ibm-background-gray-35"><img src="${
       this.image
       }" class="ibm-resize" alt="${this.alt}">
@@ -44,7 +50,8 @@ var json = $.getJSON("./js/ondemand.json", function (results) {
                           
                           </div>
                     </div></div>`;
-    $("#card__container").append(div);
+    // $("#card__container").append(div);
+    cardArr.push(div);
   });
 });
 
@@ -174,9 +181,71 @@ function setSameHeight(el) {
     }
   }, 100);
 }
+
+let current_page = 1;
+let rows = 9;
+
+function DisplayList (items, /*wrapper,*/ rows_per_page, page) {
+	// wrapper.innerHTML = "";
+  $("#card__container").empty();
+	page--;
+  // console.log("items", items)
+  // console.log("wrapper", wrapper)
+
+	let start = rows_per_page * page;
+	let end = start + rows_per_page;
+	let paginatedItems = items.slice(start, end);
+
+	for (let i = 0; i < paginatedItems.length; i++) {
+		let item = paginatedItems[i];
+
+    console.log("item", item)
+    
+    $("#card__container").append(item);
+		// let item_element = document.createElement('div');
+		// item_element.classList.add('item');
+		// item_element.innerText = item;
+		
+		// wrapper.appendChild(item_element);
+	}
+}
+
+function SetupPagination (items, /*wrapper,*/ rows_per_page) {
+  // wrapper.innerHTML = "";
+  $("#pagination").empty()
+
+	let page_count = Math.ceil(items.length / rows_per_page);
+	for (let i = 1; i < page_count + 1; i++) {
+		let btn = PaginationButton(i, items);
+		$("#pagination").append(btn);
+	}
+}
+
+function PaginationButton (page, items) {
+	let button = document.createElement('button');
+	button.innerText = page;
+
+	if (current_page == page) button.classList.add('active');
+
+	button.addEventListener('click', function () {
+		current_page = page;
+		DisplayList(items, rows, current_page);
+    setSameHeight("event__content");
+
+		let current_btn = document.querySelector('.pagenumbers button.active');
+		current_btn.classList.remove('active');
+
+		button.classList.add('active');
+	});
+
+	return button;
+}
+
 $(window).on("load", function () {
   setSameHeight("event__content");
   setSameHeight("ondemand__content");
+  DisplayList(cardArr, /*list_element,*/ rows, current_page);
+  SetupPagination(cardArr, /*pagination_element,*/ rows);
   var cloudqty = 0;
   var iaqty = 0;
   var seguridadqty = 0;
