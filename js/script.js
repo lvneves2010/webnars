@@ -24,6 +24,22 @@ var json = $.getJSON("./js/eventos.json", function (results) {
                     </div></div>`;
     // $("#card__container").append(div);
     cardArr.push(div);
+    k = this.keyword
+    if(k == "cloud") {
+      cloudqty += 1
+    } else if (k == "ia") {
+      iaqty += 1
+    } else if (k == "seguridad") {
+      seguridadqty += 1
+    } else if (k == "infraestructura") {
+      infraestructuraqty += 1
+    } else if (k == "data") {
+      dataqty += 1
+    } else if (k == "consultoria") {
+      consultoriaqty += 1
+    } else if (k == "servicios") {
+      serviciosqty += 1
+    }
 
   });
 });
@@ -52,6 +68,22 @@ var json = $.getJSON("./js/ondemand.json", function (results) {
                     </div></div>`;
     // $("#card__container").append(div);
     cardArr.push(div);
+    k = this.keyword
+    if(k == "cloud") {
+      cloudqty += 1
+    } else if (k == "ia") {
+      iaqty += 1
+    } else if (k == "seguridad") {
+      seguridadqty += 1
+    } else if (k == "infraestructura") {
+      infraestructuraqty += 1
+    } else if (k == "data") {
+      dataqty += 1
+    } else if (k == "consultoria") {
+      consultoriaqty += 1
+    } else if (k == "servicios") {
+      serviciosqty += 1
+    }
   });
 });
 
@@ -62,7 +94,7 @@ function mySearch() {
   input = document.getElementById("searchInput");
   filter = input.value.toUpperCase();
   container = document.getElementById("cards");
-  console.log("check", container)
+  // console.log("check", container)
   card = container.getElementsByClassName("ibm-padding-top-1");
 
 for (i = 0; i < card.length; i++) {
@@ -123,13 +155,13 @@ function check()
   }
 
   filterSearch(keywords)
-  console.log("keywords", keywords)
+  // console.log("keywords", keywords)
 }
 
 function filterSearch(keys) {
   var i, card, container;
   container = document.getElementById("cards");
-  console.log("keys", keys)
+  // console.log("keys", keys)
   card = container.getElementsByClassName("ibm-padding-top-1");
 
 
@@ -159,7 +191,7 @@ function filterSearch(keys) {
         } else if (k == "servicios") {
           serviciosqty += 1
         }
-        console.log("k>>", k)
+        // console.log("k>>", k)
         if( k == key) {
           card[i].style.display = "";
         }
@@ -199,7 +231,7 @@ function DisplayList (items, /*wrapper,*/ rows_per_page, page) {
 	for (let i = 0; i < paginatedItems.length; i++) {
 		let item = paginatedItems[i];
 
-    console.log("item", item)
+    // console.log("item", item)
     
     $("#card__container").append(item);
 		// let item_element = document.createElement('div');
@@ -246,33 +278,34 @@ $(window).on("load", function () {
   setSameHeight("ondemand__content");
   DisplayList(cardArr, /*list_element,*/ rows, current_page);
   SetupPagination(cardArr, /*pagination_element,*/ rows);
-  var cloudqty = 0;
-  var iaqty = 0;
-  var seguridadqty = 0;
-  var infraestructuraqty = 0;
-  var dataqty = 0;
-  var consultoriaqty = 0;
-  var serviciosqty = 0;
+  // var cloudqty = 0;
+  // var iaqty = 0;
+  // var seguridadqty = 0;
+  // var infraestructuraqty = 0;
+  // var dataqty = 0;
+  // var consultoriaqty = 0;
+  // var serviciosqty = 0;
   var i, card, container;
   container = document.getElementById("cards");
   card = container.getElementsByClassName("ibm-padding-top-1");
+  // console.log("card>>", card, cardArr)
   for (i = 0; i < card.length; i++) {
     k = card[i].getAttribute("keyword");
-    if(k == "cloud") {
-      cloudqty += 1
-    } else if (k == "ia") {
-      iaqty += 1
-    } else if (k == "seguridad") {
-      seguridadqty += 1
-    } else if (k == "infraestructura") {
-      infraestructuraqty += 1
-    } else if (k == "data") {
-      dataqty += 1
-    } else if (k == "consultoria") {
-      consultoriaqty += 1
-    } else if (k == "servicios") {
-      serviciosqty += 1
-    }
+    // if(k == "cloud") {
+    //   cloudqty += 1
+    // } else if (k == "ia") {
+    //   iaqty += 1
+    // } else if (k == "seguridad") {
+    //   seguridadqty += 1
+    // } else if (k == "infraestructura") {
+    //   infraestructuraqty += 1
+    // } else if (k == "data") {
+    //   dataqty += 1
+    // } else if (k == "consultoria") {
+    //   consultoriaqty += 1
+    // } else if (k == "servicios") {
+    //   serviciosqty += 1
+    // }
   }
   
   $("#checkboxes").html(`                              <div class="bx--form-item bx--checkbox-wrapper">
