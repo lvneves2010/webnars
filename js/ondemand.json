@@ -40,7 +40,7 @@
   },
   "card22": {
     "title": "Nuevo LinuxONE",
-    "keyword": "cloud",
+    "keyword": "consultoria",
     "description": "La nube que desea con la privacidad y seguridad que necesita. Acompañanos en el próximo webcast para descubrir qué sucede cuando la nube nativa se encuentra con la computación empresarial.",
     "alt": "Empleado de pie en un centro de datos verifica la información en el laptop que sostiene mientras mueve un servidor con la otra mano.",
     "image": "./images/eventos/LinuxONE.jpg",
@@ -67,7 +67,7 @@
   },
   "card1": {
     "title": "Es hora de pensar en una estrategia cloud de SAP Business ONE",
-    "keyword": "cloud",
+    "keyword": "consultoria",
     "description": "Conoce la importancia de comenzar a trabajar una estrategia de nube para correr SAP Business ONE. Qué implica una migración y cuáles son sus costos y beneficios. Mejoremos juntos tus procesos core e incrementa el desempeño de SAP a menor costo. ",
     "alt": "Hombre con gafas de pie mirando su tablet.",
     "image": "./images/eventos/card03.jpg",
@@ -203,7 +203,7 @@
   },
   "card11": {
     "title": "Almacenamiento para IA y big data: Optimiza cada etapa de tu flujo de datos.",
-    "keyword": "data",
+    "keyword": "seguridad",
     "description": "En este webinar te contaremos cómo podemos ayudar a su empresa en el camino hacia la IA y obtener un valor real a partir del análisis de sus datos para tomar mejores decisiones comerciales.",
     "alt": "Hombre de negocios sosteniendo su tablet y sonriendo a la cámara.",
     "image": "./images/ondemand/card08.jpg",

@@ -26,7 +26,6 @@
   border: none;
   width: -webkit-fill-available;
   border-bottom: solid black 0.1px;
-  /* font-size: 0.9rem; */
 }
 
 .bx--search-magnifier {
@@ -152,8 +151,12 @@
   display: flex;
 }
 
-.ibm-padding-top-1 {
+.card-frame {
   max-width: 33%;
+}
+
+.only-card {
+  max-width: 50%;
 }
 
 .search-controls {
@@ -168,23 +171,24 @@
 }
 
 .pagenumbers button {
-	width: 50px;
-	height: 50px;
+	width: 18px;
+	height: 40px;
 
 	appearance: none;
 	border: none;
 	outline: none;
 	cursor: pointer;
 
-	background-color: #44AAEE;
+	background-color: #fff;
+  border-bottom: solid 5px #fff;
 
-	margin: 5px;
+  margin: 25px;
+  padding: 0;
 	transition: 0.4s;
 
-	color: #FFF;
-	font-size: 18px;
+	color: #000;
+	font-size: 14px;
 	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 .pagenumbers button:hover {
@@ -192,6 +196,8 @@
 }
 
 .pagenumbers button.active {
-	background-color: #0062ff;
-	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: solid 5px #0062ff;
+}
+.filtercard {
+  display: none;
 }
